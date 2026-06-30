@@ -1,0 +1,42 @@
+{
+  "name": "cupbet-worldcup2026",
+  "version": "1.0.0",
+  "description": "FIFA World Cup 2026 live betting platform with crypto wallet integration",
+  "author": "Jose Rodriguez <joserodriguezlm2026@outlook.com>",
+  "license": "MIT",
+  "homepage": "https://joserodriguez224.github.io/betting-site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joserodriguez224/betting-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joserodriguez224/betting-site/issues"
+  },
+  "keywords": [
+    "betting",
+    "fifa",
+    "world-cup-2026",
+    "crypto",
+    "react",
+    "vite",
+    "live-scores"
+  ],
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "powershell -ExecutionPolicy Bypass -File scripts/deploy.ps1"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.21"
+  }
+}

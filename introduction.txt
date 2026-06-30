@@ -1,0 +1,134 @@
+================================================================================
+                         CUPBET — SITE INTRODUCTION
+              FIFA World Cup 2026 — Live Crypto Betting Platform
+================================================================================
+
+OVERVIEW
+--------
+CupBet is a modern sports betting website built for the FIFA World Cup 2026
+tournament, hosted across the United States, Mexico, and Canada. The platform
+combines real-time match data with a clean, mobile-friendly betting experience
+and cryptocurrency wallet support.
+
+Tagline: FIFA World Cup 2026 — Live Crypto Betting
+
+The site is designed for fans who want to follow every World Cup match live,
+view odds, build bet slips, and place wagers using crypto-funded accounts.
+
+
+WHAT THE SITE DOES
+------------------
+1. LIVE MATCH DATA
+   CupBet displays FIFA World Cup 2026 matches with scores and status updates
+   in near real time. Match data is fetched from the worldcup26.ir API and
+   refreshed automatically every 30 seconds. If the primary source is
+   unavailable, the site falls back to the openfootball public JSON dataset.
+
+2. BETTING MARKETS
+   Users can bet on match outcomes using standard 1X2 markets:
+     - 1  = Home team win
+     - X  = Draw
+     - 2  = Away team win
+
+   Odds are calculated dynamically based on team strength and live match state.
+   Multiple selections can be combined into a parlay bet through the bet slip.
+
+3. BET SLIP
+   A sticky bet slip keeps selected wagers visible while browsing matches.
+   On desktop, it appears in a sidebar. On mobile, it opens as a bottom drawer.
+   Users can set their stake, see total odds, and preview potential returns
+   before confirming a bet.
+
+4. CRYPTO WALLET
+   CupBet supports cryptocurrency-based account funding. The server deposit
+   address is:
+
+     0xE675756110f96D5E63a4e28fA51235f1460d64b4
+
+   Users connect a wallet, deposit funds, and place bets in USDT. Bet history
+   is stored locally in the browser for quick reference.
+
+5. TOURNAMENT COVERAGE
+   The platform covers the full 2026 World Cup schedule, including:
+     - Group stage (Groups A through L)
+     - Knockout rounds (Round of 32, Round of 16, Quarter-Finals, Semi-Finals)
+     - Third-place match and Final
+
+   Group standings are displayed with team names, played matches, wins, goal
+   difference, and points.
+
+
+KEY FEATURES
+------------
+  * Real-time score updates (30-second polling interval)
+  * Live match ticker with scrolling in-play scores
+  * Filter matches by Live, Upcoming, or Results
+  * Search teams and filter by group
+  * National team flag badges
+  * Responsive design for desktop and mobile
+  * Sticky bet slip with parlay support
+  * Quick stake presets (5, 10, 25, 50 USDT)
+  * Crypto deposit address with copy-to-clipboard
+  * Group standings table for all 12 groups
+  * 18+ responsible gambling disclaimer
+
+
+HOW TO USE THE SITE
+-------------------
+  1. Open the site in your browser (default dev URL: http://localhost:3000).
+  2. Browse matches on the main page. Use tabs to filter Live, Upcoming, or
+     Results.
+  3. Click an odds button (1, X, or 2) on any open match to add it to your
+     bet slip.
+  4. Click "Connect Wallet" in the header to activate your account.
+  5. Go to the Wallet section to view the server deposit address or add demo
+     funds.
+  6. Set your stake in the bet slip and click "Place Bet" to confirm.
+  7. View recent bets in the Wallet section.
+
+
+TECHNICAL DETAILS
+-----------------
+  Project name : cupbet-worldcup2026
+  Framework    : React 18 + Vite
+  Styling      : Custom CSS (dark sportsbook theme)
+  Data sources :
+    - Primary  : https://worldcup26.ir/get/games
+    - Groups   : https://worldcup26.ir/get/groups
+    - Fallback : openfootball/worldcup.json (GitHub)
+
+  Match refresh interval : 30 seconds
+  Crypto network         : Ethereum (ERC-20)
+
+
+IMPORTANT NOTES
+---------------
+  * FIFA does not provide a public official API. Match data is sourced from
+    the community worldcup26.ir service. CupBet is not affiliated with FIFA.
+
+  * This platform currently operates in demo mode. Wallet connections and
+    deposits are simulated in the browser. A production betting service
+    requires proper licensing, KYC compliance, and backend verification of
+    on-chain transactions.
+
+  * Gambling involves financial risk. Users must be 18 or older and should
+    bet responsibly according to local laws in their jurisdiction.
+
+
+GETTING STARTED (DEVELOPERS)
+----------------------------
+  Install dependencies : npm install
+  Run development      : npm run dev
+  Build for production : npm run build
+  Preview production   : npm run preview
+
+
+CONTACT & PROJECT
+-----------------
+  Author   : Jose Rodriguez
+  Email    : joserodriguezlm2026@outlook.com
+  License  : MIT
+
+================================================================================
+                              END OF INTRODUCTION
+================================================================================
